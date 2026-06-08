@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head> <!--menyediakan informasi-->
+    <meta charset="UTF-8"><!-- "meta" untuk memberikan informasi metadata tentang sebuah halaman web kepada mesin pencari-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title><!--untuk judul--> <!--untuk yang bawah "style" memberi tampilan pada elemen HTML-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .header {
+            text-align: ;
+        }
+        .header h1 {
+            color: blue;
+            margin: 0;
+        }
+        .header p {
+            font-style: italic;
+        }
+        .contact-info, .customer-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .line {
+            border-top: 2px solid green;
+            margin: 10px 0;
+        }
+        .invoice-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .note {
+            color: red;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style> <!--isi ".heading" dengan "center" kalau ingin di tengah tengah-->
+</head>
+<body>
+    <div class="header"> <!--"div" mengelompokkan elemen elemen-->
+        <h1>HI-TECH COMP</h1>
+        <p>Kalian butuh apa, Kami Pasti ADA!</p>
+    </div>
+
+    <div class="contact-info">
+        <div>
+            <p>Jl. semangka No. 42<br>
+            (simpang jalan semangka)<br>
+            solo 68686</p>
+        </div>
+        <div>
+            <p>Phone: 082136213868<br> <!--"p" untuk membuat paragraf--><!--"br" untuk membuat garis baru-->
+            Mobile: 082136213868<br>
+            Email: hi-techkomp@gmail.com<br>
+            Website: hitechkomp.com</p>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="invoice-title">INVOICE</div>
+
+    <div class="customer-info">
+        <div>
+            <p>Invoice No: 00012345/JUL/2025</p>
+        </div>
+        <div>
+            <p>Tanggal: 19 Juli 2025<br>
+            Customer: Mr. Farros<br>
+            Phone: 082136213868</p>
+        </div>
+    </div>
+
+    <table>
+        <thead> <!--untuk menampilkan data dalam bentuk tabel di halaman web-->
+            <tr> <!--mendefinisikan baris dalam tabel-->
+                <th>No.</th>
+                <th>Jenis Barang</th>
+                <th>Quantity</th>
+                <th>Harga Satuan</th>
+                <th>Total Harga</th>
+            </tr>
+        </thead>
+        <tbody> <!--mengelompokkan konten body/badan-->
+            <tr>
+                <td>1</td> <!--menentukan sel dalam tabel-->
+                <td>Laptop Acer-14 7380U</td>
+                <td>1</td>
+                <td>Rp 8.000.000,00</td>
+                <td>Rp 8.000.000,00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mouse Wireless Fantech RaigorIII WG12RS</td>
+                <td>1</td>
+                <td>Rp 150.000,00</td>
+                <td>Rp 150.000,00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Cas Laptop hp-14</td>
+                <td>1</td>
+                <td>Rp 400.000,00</td>
+                <td>Rp 400.000,00</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Tas hp-14 anti air</td>
+                <td>1</td>
+                <td>Rp 200.000,00</td>
+                <td>Rp 200.000,00</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>RAM 8</td>
+                <td>2</td>
+                <td>Rp 300.000,00</td>
+                <td>Rp 300.000,00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="total-info">
+        <p>Sub Total: Rp 9.050.000,00</p>
+        <p>Diskon: Rp 200.00,00</p>
+        <p><strong>Total Bayar: Rp 8.850.000,00</strong></p>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="note">
+        <p>1. Barang yang sudah dibeli tidak dapat ditukar kembali</p>
+        <p>2. Invoice ini bukan merupakan kartu garansi</p>
+    </div>
+
+    <div class="footer">
+        ---- TERIMA KASIH SUDAH BERBELANJA DI TOKO KAMI, SAMPAI JUMPA KEMBALI! ----
+    </div>
+</body>
+</html>
